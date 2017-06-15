@@ -1,0 +1,12 @@
+li {
+    margin: 10px;
+}
+ul {
+    width: 250px;
+}
+ul.illuminations {
+    list-style-position: outside;
+}
+ul.season {
+    list-style-position: inside;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example Form</title>
+    </head>
+    <body>
+        <form action="post.php" method="post">
+            <fieldset>
+                <legend>Your Details:</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required="required" />
+                <br />
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required="required" />
+            </fieldset>
+        </form>
+        <br />
+        <form action="post.php" method="post">
+            <fieldset>
+                <legend>Your Review:</legend>
+                <p>
+                    <label for="hear">How did you hear about us?</label>
+                    <select name="sites" id="hear">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advert">Advert</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    Would you visit again?<br />
+                    <label for="yes">Yes</label>
+                    <input type="radio" value="yes" name="rating" id="yes" />
+                    <label for="no">No</label>
+                    <input type="radio" name="rating" value="no" id="no" />
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" name="rating" value="maybe" id="maybe" />
+                </p>
+                <p>
+                    <label for="comment">Comments:</label>
+                    <br />
+                    <textarea id="comment" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+                </p>
+                <input type="checkbox" id="signme" checked="checked" name="subscribe" />
+                <label for="signme">Sign me up for email updates</label>
+                <br />
+                <input type="submit" value="Submit review" />
+            </fieldset>
+        </form>
+    </body>
+</html>

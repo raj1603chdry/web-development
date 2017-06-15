@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form method="post" action="post.php">
+            <p>This is the form area.</p>
+        </form>
+        <hr />
+        <form method="post" action="post.php">
+            <p>Username:
+                <input type="text" name="username" maxlength="15" size="15" />
+            </p>
+            <p>Password:
+                <input type="password" name="password" maxlength="15" size="15" />
+            </p>
+        </form>
+        <hr />
+        <h4>TEXTAREA</h4>
+        <form method="post" action="post.php">
+            <p>What do you think of this gig?</p>
+            <textarea name="comments" cols="20" rows="4" placeholder="Enter your comments"></textarea>
+        </form>
+        <hr />
+        <h4>RADIO BUTTON</h4>
+        <form method="post" action="post.php">
+            <p>Please enter your favourite genre</p>
+            <input type="radio" name="genre" value="rock" checked="checked" />Rock
+            <input type="radio" name="genre" value="pop" />Pop
+            <input type="radio" name="genre" value="jazz" />Jazz
+        </form>
+        <hr />
+        <h4>CHECKBOX</h4>
+        <form method="post" action="post.php">
+            <p>Please select your favourite music service(s):</p>
+            <input type="checkbox" name="service" value="itunes" checked="checked"/>iTunes
+            <input type="checkbox" name="service" value="lastfm" />Last.fm
+            <input type="checkbox" name="service" value="spotify" />Spotify
+        </form>
+        <hr />
+        <h4>DROP DOWN LIST BOX</h4>
+        <form action="post.php" method="post">
+            <p>What device do you listen to music on?</p>
+            <select name="device">
+                <option value="ipod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computer" selected="selected">Computer</option>
+            </select>
+        </form>
+        <hr />
+        <h4>MULTIPLE SELECT BOX</h4>
+        <form method="post" action="post.php">
+            <p>Do you play any of the following instruments? (You can select more than one option by holding down the control on a PC or the command key on a Mac while selecting different options.)</p>
+            <select name="instruments" size="3" multiple="multiple">
+                <option value="guitar">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+        </form>
+        <hr />
+        <h4>FILE INPUT BOX</h4>
+        <form method="post" action="post.php">
+            <p>Upload your song in MP3 format</p>
+            <input type="file" name="user-song" />
+            <br />
+            <input type="submit" value="Upload" />
+        </form>
+        <hr />
+        <h4>SUBMIT BUTTON</h4>
+        <form action="post.php" method="post">
+            <p>Subscribe to our e-mail list:</p>
+            <input type="text" name="email" />
+            <input type="submit" value="Subscribe" />
+        </form>
+        <hr />
+        <h4>IMAGE BUTTON</h4>
+        <form method="post" action="post.php">
+            <p>Subscribe to our e-mail list:</p>
+            <input type="text" name="email" />
+            <input type="image" src="../images/subscribe.jpg" width="100" height="20" />
+        </form>
+        <hr />
+        <h4>BUTTON AND HIDDEN CONTROLS</h4>
+        <form action="post.php" method="post">
+            <button><img src="../images/add.gif" width="10" height="10" alt="add" />Add</button>
+            <input type="hidden" name="bookmark" value="lyrics" />
+        </form>
+        <hr />
+        <h4>LABELLING FORM CONTROLS</h4>
+        <form action="post.php" method="post">
+            <label>Age: <input type="text" name="age" /></label>
+            <br />
+            Gender:
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">Male</label>
+        </form>
+        <hr />
+        <h4>GROUPING FORM ELEMENTS</h4>
+        <form action="post.php" method="post">
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Email:<br /><input type="text" name="email" /></label>
+                <br />
+                <label>Mobile:<br /><input type="text" name="mobile" /></label>
+                <br />
+                <label>Telephone:<br /><input type="text" name="telephone" /></label>
+            </fieldset>
+        </form>
+        <hr />
+        <h4>HTML5: FORM VALIDATION</h4>
+        <form action="post.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required="required" />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required="required" />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+        <hr />
+        <h4>HTML5: DATE INPUT</h4>
+        <form action="post.php" method="post">
+            <label for="depart">Departure date:</label>
+            <input type="date" id="depart" name="depart" />
+            <input type="submit" value="Submit" />
+        </form>
+        <hr />
+        <h4>HTML5: EMAIL AND URL INPUT</h4>
+        <form action="post.php" method="post">
+            <p>Please enter your email address:</p>
+            <input type="email" name="email" />
+            <input type="submit" value="Submit" />
+            <p>Please enter your website address</p>
+            <input type="url" name="url" />
+            <input type="submit" value="Submit" />
+        </form>
+        <hr />
+        <h4>HTML5: SEARCH INPUT</h4>
+        <form method="post" action="post.php">
+            <p>Search:</p>
+            <input type="search" name="search" placeholder="Enter keyword" />
+            <input type="submit" value="Search" />
+        </form>
+        <hr />
+    </body>
+</html>

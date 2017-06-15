@@ -1,0 +1,20 @@
+/* adding background color of different HTML elements. */
+body {
+    background-color: rgb(200, 200, 200);
+    padding: 10px;
+}
+h1 {
+    background-color: DarkCyan;
+    color: white;
+    padding: inherit;
+}
+h2 {
+    background-color: #ee3e80;
+    color: white;
+    padding: inherit;
+}
+p {
+    background-color: white;
+    color: rgb(100, 100, 90);
+    padding: inherit;
+}

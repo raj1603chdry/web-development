@@ -1,0 +1,16 @@
+/* order of appearance is - :link, :visited, :hover, :active, :focus  */
+
+a:link {
+    color: deeppink;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+a:active {
+    color: black;
+}

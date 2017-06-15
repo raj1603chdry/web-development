@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Verdana, sans-serif;;
+    color: #111111;
+}
+p {
+    text-align: center;
+    width: 250px;
+    border-width: 3px;
+    border-color: #0088dd;
+}
+p.one {
+    border-style: solid;
+    padding: 5px;
+}
+p.two {
+    text-align: left;
+    border-style: dotted;
+    padding: 10px;
+    margin: 10px;
+}
+p.three {
+    text-align: right;
+    border-style: dashed;
+    padding-top: 20px;
+    margin: 12px 14px 16px 18px;
+}
+p.four {
+    border: 4px double chocolate;
+    padding-right: 20px;
+}
+p.five {
+    border-style: groove;
+    padding-bottom: 20px;
+}
+p.six {
+    border-style: ridge;
+    padding-left: 20px;
+}
+p.seven {
+    border-style: inset;
+    border-top-color: deeppink;
+    border-bottom-color: deeppink;
+    padding: 10px 14px 18px 22px;
+}
+p.eight {
+    border-style: outset;
+    border-color: darkcyan deeppink chocolate grey;
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

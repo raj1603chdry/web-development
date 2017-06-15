@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flash, Video &amp; Audio</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript">swfobject.embedSWF("../flash/bird.swf", "bird", "400", "300", "8.0.0");</script>
+        <script type="text/javascript">
+            var flashvars = {};
+            var params = {movie:"../video/puppy.flv"};
+            swfobject.embedSWF("../flash/osplayer.swf", "snow", "400", "300", "8.0.0", flashvars, params);
+        </script>
+        <script type="text/javascript">
+            var flashvars = {};
+            var params = {mp3:"../audio/test-audio.mp3"};
+            swfobject.embedSWF("../flash/player_mp3_1.0.0.swf", "music-player", "200", "20", "8.0.0", flashvars, params);
+        </script>
+    </head>
+    <body>
+        <!-- we will be embedding flash in our webpage using the swift object (swfobject) of JavaScript. -->
+        <h4>FLASH MOVIE</h4>
+        <div id="bird"><p>An animation of a bird taking a shower</p></div>
+        <!-- to be able to run Flash on the site enable flash for the site in setting/content by adding exception. -->
+        <hr />
+        <h4>FLASH VIDEO</h4>
+        <div id="snow"><p>A video of a puppy playing in the snow</p></div>
+        <hr />
+        <h4>HTML5: ADDING VIDEO TO THE WEBPAGE</h4>
+        <!-- in HTML5 we do not nedd to provide value for attributes like preload, autoplay and loop. They work like on/off switches and only need to be present to make effect in the code -->
+        <video src="../video/puppy.mp4" poster="../images/puppy.jpg" width="400" height="400" preload loop controls><p>A video of a puppy playing in the snow.</p></video>
+        <hr />
+        <h4>HTML5: MULTIPLE VIDEO SOURCES</h4>
+        <video poster="../images/puppy.jpg" width="400" height="300" preload controls loop>
+            <source src="../video/puppy.mp4" type='video/mp4;codecs="avcl.42E01E, mp4a.40.2"' />
+            <source src="../video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+            <p>A video of a puppy playing in the snow</p>
+        </video>
+        <hr />
+        <h4>FLASH MP3 PLAYER</h4>
+        <div id="music-player">
+            <p>You cannot hear this track because this browser does not support our Flash music player.</p>
+        </div>
+        <hr />
+        <h4>HTML5: ADDING AUDIO TO THE WEBPAGE</h4>
+        <audio src="../audio/test-audio.mp3" controls loop preload><p>This browser does not support our audio format</p></audio>
+        <!-- both .ogg and .mp3 are supported by chrome -->
+        <hr />
+        <h4>HTML5: MULTIPLE AUDIO SOURCES</h4>
+        <audio controls preload loop>
+            <source src="../audio/test-audio.mp3" />
+            <source src="../audio/test-audio.ogg" />
+            <p>This format of audio is not supported by your browser.</p>
+        </audio>
+        <hr />
+    </body>
+</html>
