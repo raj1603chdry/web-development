@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #665544;
+}
+.medium {
+    width: 250px;
+    height: 250px;
+}
+.align-left {
+    float: left;
+    margin-right: 10px;
+}
+.align-right {
+    float: right;
+    margin-left: 10px;
+}

@@ -1,0 +1,18 @@
+/* this part is used to apply the image to the whole background
+body {
+    background-image: url("../images/pattern.gif");
+    padding: 20px;
+    color: white;
+}
+*/
+
+/* this part of code is used to apply the image to a particular element */
+body {
+    color: #665544;
+    padding: 20px;
+}
+p {
+    padding: 20px;
+    background-image: url("../images/pattern.gif");
+    color: white;
+}
