@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data List</title>
+    </head>
+    <body>
+        <form id="form1">
+            <input list="browsers" />
+            <datalist id="browsers">
+                <option value="Chrome" />
+                <option value="Safari" />
+                <option value="Internet Explorer" />
+                <option value="Firefox" />
+                <option value="Opera" />
+            </datalist>
+            <br />
+            50 <input type="range" max="100" min="50" autofocus /> 100
+            <br />
+            <input type="reset" disabled /> <!-- disabled is used to disable the input field -->
+            <br />
+            <input type="color" />
+            <br />
+            <input type="date" min="1998-01-01" max="2017-08-10" />
+            <br />
+            <input type="datetime-local" />
+            <br />
+            <input type="email" required />
+            <br />
+            <input type="month" />
+            <br />
+            <input type="number" min="25" max="50" step="5" />
+            <br />
+            <input type="tel" />
+            <br />
+            <input type="week" formaction="#" /> <!-- to send it's data to different URL -->
+            <br /><br />
+            <input type="submit" />
+            <!-- multiple attribute enables to enter multile attributes in a field. -->
+        </form>
+        <input type="text" form="form1" />
+    </body>
+</html>
