@@ -1,0 +1,15 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#skewX {
+  transform: skewX(20deg);
+}
+div#skewY {
+  transform: skewY(20deg);
+}
+div#skew {
+  transform: skew(20deg,10deg);
+}

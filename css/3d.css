@@ -1,0 +1,15 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#rotateX {
+  transform: rotateX(150deg);
+}
+div#rotateY {
+  transform: rotateY(150deg);
+}
+div#rotateZ {
+  transform: rotateZ(90deg);
+}

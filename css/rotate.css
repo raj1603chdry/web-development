@@ -1,0 +1,12 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+div#myDivclock {
+  transform: rotate(20deg);
+}
+div#myDivanti {
+  transform: rotate(-20deg);
+}
