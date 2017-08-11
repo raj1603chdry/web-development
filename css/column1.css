@@ -1,0 +1,28 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-11T22:30:05+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: column1.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-11T22:30:05+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+.newspaper {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  column-gap: 40px;
+  -webkit-column-rule-style: solid;
+  column-rule-style: solid;
+  -webkit-column-rule-width: 1px;
+  column-rule-width: 1px;
+  -webkit-column-rule-color: red;
+  column-rule-color: red;
+  -webkit-column-width: 100px;
+  column-width: 100px;
+}
+h2 {
+  -webkit-column-span: all;
+  column-span: all;
+}

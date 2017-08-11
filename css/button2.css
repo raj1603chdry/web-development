@@ -1,0 +1,36 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-11T13:22:43+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: button2.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-11T18:38:02+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 9px #999999;
+  box-shadow: 0 9px #999999;
+}
+.button:hover {
+  background-color: #3e8e41;
+}
+.button:active {
+  background-color: #3e8e41;
+  -webkit-box-shadow: 0 5px #666666;
+  box-shadow: 0 5px #666666;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}

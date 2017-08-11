@@ -1,0 +1,43 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-11T22:03:48+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: pagination1.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-11T22:03:48+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+.center {
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination a{
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  float: left;
+  /*border-radius: 5px;*/
+  /*margin: 0 4px;*/  /* for creating space between individual links */
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border: 1px solid #dddddd;
+}
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #dddddd;
+}
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,21 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-11T22:37:40+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: resize1.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-11T22:37:41+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+div {
+  border: 1px solid black;
+  padding: 30px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+  margin: 20px;
+  outline: 1px solid red;
+  /* the below property moves the outline away from the border */
+  outline-offset: 15px;
+}
