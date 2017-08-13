@@ -1,0 +1,120 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-11T22:58:46+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: flex1.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-11T22:58:46+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+/*
+body {
+  direction: rtl;
+}*/
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  /* flex-direction row-reverse /*
+
+  /*-webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;*/
+
+  /* flex-direction column */
+
+  /*-webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;*/
+
+  /* flex-direction column-reverse */
+
+  /*-webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;*/
+
+  /*justify-content flex-end */
+  /*-webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;*/
+
+  /* justify-content center */
+  /*-webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;*/
+
+  /* justify-content space-between */
+  /*-webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;*/
+
+  /* justify-content space-around */
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  /* align-items: stretch */
+  /*-webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;*/
+
+  /* align-items: flex-start */
+  /*-webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;*/
+
+  /* align-items: flex-end */
+  /*-webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;*/
+
+  /* align-item: center */
+  /*-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;*/
+
+  /* align-items: baseline */
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+
+  /* flex-wrap nowrap*/
+  /*-ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;*/
+
+  /* flex-wrap wrap */
+  /*-ms-flex-wrap: wrap;
+  flex-wrap: wrap;*/
+
+  /* flex-wrap wrap reverse */
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+
+  -ms-flex-line-pack: center;
+  align-content: center;
+
+  width: 400px;
+  height: 250px;
+  background-color: lightgrey;
+}
+.flex-item {
+  background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.first {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+.flex-item:first-child {
+  margin-right: auto;
+}

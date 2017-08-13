@@ -1,0 +1,41 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-12T15:08:05+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: media2.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-12T15:08:06+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+.wrapper {
+  overflow: auto;
+}
+#main {
+  margin-left: 4px;
+}
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+.menuitem {
+  background: #cdf0f6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  padding: 2px;
+  margin: 4px;
+}
+@media screen and (min-width: 480px) {
+  #leftsidebar {
+    width: 200px;
+    float: left;
+  }
+  #main {
+    margin-left: 216px;
+  }
+}

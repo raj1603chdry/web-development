@@ -1,0 +1,19 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-12T15:02:52+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: media1.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-12T15:02:52+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+
+body {
+  background-color: pink;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}

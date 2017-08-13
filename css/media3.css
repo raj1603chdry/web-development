@@ -1,0 +1,40 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-12T15:17:57+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: media3.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-12T15:17:57+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+ul {
+  list-style-type: none;
+}
+ul li a {
+  color: green;
+  text-decoration: none;
+  padding: 3px;
+  display: block;
+}
+@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  ul li a {
+    padding-left: 30px;
+    background: url('../images/icon-plus.png') left center no-repeat;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  ul li a::before {
+    content: "Email: ";
+    font-style: italic;
+    color: #666666;
+  }
+}
+@media screen and (min-width: 1001px) {
+  ul li a::after {
+    content: " (" attr(data-email) ")";
+    font-size: 12px;
+    font-style: italic;
+    color: #666666; 
+  }
+}
