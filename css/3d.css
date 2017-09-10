@@ -1,3 +1,15 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-09T12:03:55+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: 3d.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-26T21:07:08+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+
+
 div {
   width: 300px;
   height: 100px;
@@ -5,11 +17,14 @@ div {
   border: 1px solid black;
 }
 div#rotateX {
-  transform: rotateX(150deg);
+  -webkit-transform: rotateX(150deg);
+          transform: rotateX(150deg);
 }
 div#rotateY {
-  transform: rotateY(150deg);
+  -webkit-transform: rotateY(150deg);
+          transform: rotateY(150deg);
 }
 div#rotateZ {
-  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
 }

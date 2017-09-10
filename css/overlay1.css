@@ -1,0 +1,45 @@
+/**
+ * @Author: Raj Choudhary <raj1603chdry>
+ * @Date:   2017-08-10T23:22:57+05:30
+ * @Email:  raj.choudhary1603@gmail.com
+ * @Filename: overlay1.css
+ * @Last modified by:   raj1603chdry
+ * @Last modified time: 2017-08-11T18:34:56+05:30
+ * @Copyright: Raj Choudhary
+ */
+
+
+.conatiner {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  opacity: 0;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
