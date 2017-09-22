@@ -12,11 +12,11 @@ function checkUsername(minLength) {
 
 // for IE fallback
 if(username.addEventListener) {
-  username.addEventListener('blur', function() {
+  username.addEventListener('input', function() {
     checkUsername(5);
   }, false);
 } else {
-  username.attachEvent('onblur', function() {
+  username.attachEvent('oninput', function() {
     checkUsername(5);
   }, false);
 }
